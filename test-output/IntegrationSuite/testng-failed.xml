@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IntegrationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="chromeTesting(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="package1.Project1.TC1_LoginToAmazon">
+        <methods>
+          <include name="withValidCred"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- package1.Project1.TC1_LoginToAmazon -->
+      <class name="package1.Project1.TC2_LoginToAmzonAndLogout">
+        <methods>
+          <include name="withValidCred"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- package1.Project1.TC2_LoginToAmzonAndLogout -->
+      <class name="package1.Project1.TC3_LoginToAmazonSearchingLogout">
+        <methods>
+          <include name="withValidCred"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- package1.Project1.TC3_LoginToAmazonSearchingLogout -->
+    </classes>
+  </test> <!-- chromeTesting(failed) -->
+</suite> <!-- Failed suite [IntegrationSuite] -->

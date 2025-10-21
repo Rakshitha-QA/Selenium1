@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome browser is launched]]>
+    </line>
+    <line>
+      <![CDATA[Amazon website is launched]]>
+    </line>
+    <line>
+      <![CDATA[Since Tc failed, it has to be retried 2 times]]>
+    </line>
+    <line>
+      <![CDATA[Chrome browser is launched]]>
+    </line>
+    <line>
+      <![CDATA[Amazon website is launched]]>
+    </line>
+    <line>
+      <![CDATA[Login is success]]>
+    </line>
+    <line>
+      <![CDATA[TC pass and Listener logic started]]>
+    </line>
+    <line>
+      <![CDATA[Screenshot complete on Success]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-10-21T08:08:57 IST" name="IntegrationSuite" finished-at="2025-10-21T08:10:02 IST" duration-ms="65302">
+    <groups>
+    </groups>
+    <test started-at="2025-10-21T08:08:57 IST" name="chromeTesting" finished-at="2025-10-21T08:10:02 IST" duration-ms="65302">
+      <class name="package1.Project1.TC1_LoginToAmazon">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:package1.Project1.TC1_LoginToAmazon@7722c3c3]" started-at="2025-10-21T08:08:57 IST" name="launch" finished-at="2025-10-21T08:09:19 IST" duration-ms="21977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser is launched]]>
+            </line>
+            <line>
+              <![CDATA[Amazon website is launched]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method retried="true" signature="withValidCred()[pri:0, instance:package1.Project1.TC1_LoginToAmazon@7722c3c3]" started-at="2025-10-21T08:09:19 IST" name="withValidCred" finished-at="2025-10-21T08:09:29 IST" duration-ms="10165" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6bba00e77de0ccbdb28a75dacfa5d80, isElementDisplayed {id=f.1B09A834A177003F29BF4D82D3FDE21D.d.A80BBF032B2B50D69B1A3E3065693869.e.175}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52283/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b6bba00e77de0ccbdb28a75dacfa5d80)] -> name: password]
+Session ID: b6bba00e77de0ccbdb28a75dacfa5d80]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6bba00e77de0ccbdb28a75dacfa5d80, isElementDisplayed {id=f.1B09A834A177003F29BF4D82D3FDE21D.d.A80BBF032B2B50D69B1A3E3065693869.e.175}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52283/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b6bba00e77de0ccbdb28a75dacfa5d80)] -> name: password]
+Session ID: b6bba00e77de0ccbdb28a75dacfa5d80
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at package1.Project1.Amz_loginPage.validPassword(Amz_loginPage.java:42)
+at package1.Project1.TC1_LoginToAmazon.withValidCred(TC1_LoginToAmazon.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Since Tc failed, it has to be retried 2 times]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- withValidCred -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:package1.Project1.TC1_LoginToAmazon@7722c3c3]" started-at="2025-10-21T08:09:29 IST" name="quit" finished-at="2025-10-21T08:09:30 IST" duration-ms="946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:package1.Project1.TC1_LoginToAmazon@7722c3c3]" started-at="2025-10-21T08:09:30 IST" name="launch" finished-at="2025-10-21T08:09:44 IST" duration-ms="13816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser is launched]]>
+            </line>
+            <line>
+              <![CDATA[Amazon website is launched]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="withValidCred()[pri:0, instance:package1.Project1.TC1_LoginToAmazon@7722c3c3]" started-at="2025-10-21T08:09:44 IST" name="withValidCred" finished-at="2025-10-21T08:09:58 IST" duration-ms="14471" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login is success]]>
+            </line>
+            <line>
+              <![CDATA[TC pass and Listener logic started]]>
+            </line>
+            <line>
+              <![CDATA[Screenshot complete on Success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- withValidCred -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:package1.Project1.TC1_LoginToAmazon@7722c3c3]" started-at="2025-10-21T08:10:01 IST" name="quit" finished-at="2025-10-21T08:10:02 IST" duration-ms="1260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- package1.Project1.TC1_LoginToAmazon -->
+    </test> <!-- chromeTesting -->
+  </suite> <!-- IntegrationSuite -->
+</testng-results>
