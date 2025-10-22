@@ -5,8 +5,8 @@
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="package1.Project1.TC1_LoginToAmazon"/>
-      <!--<class name="package1.Project1.TC3_LoginToAmazonSearchingLogout"/>
-      <class name="package1.Project1.TC2_LoginToAmzonAndLogout"/>-->
+      <class name="package1.Project1.TC3_LoginToAmazonSearchingLogout"/>
+      <class name="package1.Project1.TC2_LoginToAmzonAndLogout"/>
     </classes>    
   </test> <!-- Test -->
   
